@@ -117,6 +117,48 @@ section h2{
     margin:0 auto;
     padding:20px 30px;
 }
+
+#products-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#products-content div{
+    margin:30px;
+}
+#products-content div h3{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+#products-content .prod-details{
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+#Products img{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+}
+#products-content .shop-item-button{
+    cursor:pointer;
+    padding:8px;
+    color:white;
+    border:none;
+    font-size:15px;
+    font-weight: bold;
+    border-radius: 4%;
+    background: #56CCF2;
+}
+#products-content .shop-item-button:hover, #merch-content .shop-item-button:hover{
+    background: #0eabdf;
+}
+
 #music-content{
     display:flex;
     flex-wrap: wrap;
@@ -313,7 +355,7 @@ footer .footer-icons{
     margin:20px;
 }
 #about div{
-     display:flex;
+    /* display:flex; */
 }
 
 #about img{
@@ -394,7 +436,6 @@ header ul a{
         margin:0px 20px;
     }
 }
-
 #cart{
     margin:0px;
     display: none;
@@ -440,3 +481,22 @@ header ul a{
     border-radius:7px;
     padding:5px;
 }
+
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+.pagination button {
+    color: #00695c;
+    padding: 0.5rem;
+    border: 1px solid #00695c;
+    margin: 0 1rem;
+  }
+  
+.pagination button:hover,
+.pagination button:active,
+.pagination button.active {
+    background: #00695c;
+    color: white;
+  }

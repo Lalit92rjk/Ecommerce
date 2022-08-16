@@ -12,6 +12,7 @@
         <ul class='header'>
             <li><a href="./index.html">HOME</a></li>
             <li><a href="#">STORE</a></li>
+            <li><a href="./orders.html">ORDER</a></li>
             <li><a href="./about.html">ABOUT</a></li>
             <a href="#cart" class="cart-holder">cart<span class='cart-number'>0</span></a>
         </ul>
@@ -20,6 +21,7 @@
 
     <section id="Products" class="container">
         <h2>Products</h2>
+        <div id="products-content"></div>
 
     </section>
 
@@ -33,11 +35,21 @@
         </div>
         <div class='cart-items'>
         </div>
+        <div class="cart-total">
+            <span>
+                <span class='total-title'> <strong>Total</strong>
+                    </span>
+                $<span id='total-value'>0</span>
+            </span>
+        </div>
         <button class='purchase-btn' type='button'>PURCHASE</button>
     </section>
 
         <button class="cart-btn-bottom"> <a href="#cart" class="cart-bottom">See the cart</a></button>
+        <section id="productPagination" class="pagination">
 
+        </section>
+    
     <!-- Toggle notification -->
     <div id="container"></div>
     <footer>
